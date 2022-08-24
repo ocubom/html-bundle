@@ -92,8 +92,38 @@ bin/console config:dump-reference ocubom_html
 You can use the [example configuration][] provided.
 
 ```yaml
-ocubom_html: ~
+ocubom_html:
+
+    # Register Ocubom/TwigHtmlExtension to minify the HTML (defaults)
+    compress:
+        force: false
+        level: smallest
+        
+    # Headers extract
+    # The listener is only registered if some header is registered
+    #headers:
+    #    # Duplicate robots meta as X-Robots-Tag
+    #    # @see https://developers.google.com/search/docs/advanced/robots/robots_meta_tag#xrobotstag
+    #    -   name:    'X-Robots-Tag'
+    #        pattern: '@[\p{Zs}]*<meta\s+(?:name="robots"\s+content="([^"]+)"|content="([^"]+)"\s+name="robots")\s*/?\s*>\p{Zs}*\n?@i'
+    #        value:   '%2$s'
+    #        replace: '%1$s'
+    #        formats:
+    #            - 'text/html'
+    #
+    #    # Disable Metro Interface
+    #    # @see https://github.com/h5bp/html5-boilerplate/blob/5.3.0/dist/doc/extend.md#prompt-users-to-switch-to-desktop-mode-in-ie10-metro
+    #    -   name:    'X-UA-Compatible'
+    #        enabled: true
+    #        pattern: '@[\p{Zs}]*<meta\s+(?:http-equiv="X-UA-Compatible"\s+content="([^"]+)"|content="([^"]+)"\s+http-equiv="X-UA-Compatible")\s*>\p{Zs}*\n?@i'
+    #        value:   '%2$s'
+    #        replace: '' # Delete the meta tag as is not standard
+    #        formats:
+    #            - 'text/html'
 ```
+
+> **Note**
+> This configuration will be installed if your project uses [endroid/installer][]
 
 _For more examples, please refer to the [Documentation](https://github.com/ocubom/html-bundle)._
 
@@ -132,6 +162,7 @@ See [LICENSE][] for more information.
 
 <!-- Links -->
 [composer]: https://getcomposer.org/
+[endroid/installer]: https://packagist.org/packages/endroid/installer
 [Symfony]: https://symfony.com/
 [Symfony Bundle]: https://symfony.com/doc/current/bundles.html
 
