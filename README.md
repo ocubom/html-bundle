@@ -10,6 +10,7 @@ A Symfony bundle to integrate several custom utilities for HTML manipulation
 [![Stargazers][stars-img]][stars-url]
 [![Issues][issues-img]][issues-url]
 [![License][license-img]][license-url]
+[![Version][packagist-img]][packagist-url]
 [![CI][workflow-ci-img]][workflow-ci-url]
 [![Coverage][coverage-ci-img]][coverage-ci-url]
 
@@ -187,3 +188,5 @@ See [LICENSE][] for more information.
 [workflow-ci-url]:  https://github.com/ocubom/html-bundle/actions/
 [coverage-ci-img]:  https://img.shields.io/codecov/c/github/ocubom/html-bundle.svg?logo=codecov&logoColor=%23fefefe&style=for-the-badge&token=NQOE5BY6MX
 [coverage-ci-url]:  https://app.codecov.io/gh/ocubom/html-bundle
+[packagist-img]:    https://img.shields.io/packagist/v/ocubom/html-bundle.svg?logo=packagist&logoColor=%23fefefe&style=for-the-badge
+[packagist-url]:    https://packagist.org/packages/ocubom/html-bundle
