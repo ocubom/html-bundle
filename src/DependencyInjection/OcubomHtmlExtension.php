@@ -20,7 +20,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 
 class OcubomHtmlExtension extends Extension
 {
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         // $loader = new PhpFileLoader($container, new FileLocator(__DIR__ . '/../../config'));
         // $loader->load('services.php');
@@ -50,8 +50,8 @@ class OcubomHtmlExtension extends Extension
     private function registerHeadersListener(ContainerBuilder $container, array $config): void
     {
         // Filter enabled header rules
-        $headers = array_filter($config['headers'], function ($header) {
-            return $header['enabled'];
+        $headers = array_filter($config['headers'], function (array $header): bool {
+            return $header['enabled'] ? true : false;
         });
 
         // Only register listener if some rule is defined
