@@ -55,7 +55,7 @@ class AddHttpHeadersTest extends TestCase
 
         foreach ($expected as $header => $value) {
             $this->assertMatchesRegularExpression(
-                '@' . $header . ':\s+' . $value . '\r\n@Uis',
+                '@'.$header.':\s+'.$value.'\r\n@Uis',
                 $event->getResponse()->headers,
                 sprintf('Missing "%s" header with value "%s"', $header, $value),
             );
@@ -137,7 +137,7 @@ class AddHttpHeadersTest extends TestCase
                 ],
             ],
             [
-                'X-Robots-Tag' => 'noindex,nofollow,noarchive,nosnippet,noodp,notranslate,noimageindex'
+                'X-Robots-Tag' => 'noindex,nofollow,noarchive,nosnippet,noodp,notranslate,noimageindex',
             ],
             implode("\n", [
                 '<html lang="en">',
@@ -177,7 +177,7 @@ class AddHttpHeadersTest extends TestCase
                 ],
             ],
             [
-                'X-Robots-Tag' => 'noindex,nofollow,noarchive,nosnippet,noodp,notranslate,noimageindex'
+                'X-Robots-Tag' => 'noindex,nofollow,noarchive,nosnippet,noodp,notranslate,noimageindex',
             ],
             implode("\n", [
                 '<html lang="en">',

@@ -26,13 +26,6 @@
         </report>
     </coverage>
 
-    <!-- PHPUnit <9 coverage setup -->
-    <filter>
-        <whitelist>
-            <directory suffix=".php">src</directory>
-        </whitelist>
-    </filter>
-
     <listeners>
         <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
     </listeners>

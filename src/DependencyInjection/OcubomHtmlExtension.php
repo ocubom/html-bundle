@@ -22,8 +22,8 @@ class OcubomHtmlExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
-        //$loader = new PhpFileLoader($container, new FileLocator(__DIR__ . '/../../config'));
-        //$loader->load('services.php');
+        // $loader = new PhpFileLoader($container, new FileLocator(__DIR__ . '/../../config'));
+        // $loader->load('services.php');
 
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);

@@ -52,7 +52,7 @@ class OcubomHtmlExtensionTest extends TestCase
             [
                 AddHttpHeadersListener::class => null,
                 HtmlExtension::class => HtmlExtension::class,
-            ]
+            ],
         ];
 
         yield 'with headers' => [
@@ -65,7 +65,7 @@ class OcubomHtmlExtensionTest extends TestCase
             [
                 AddHttpHeadersListener::class => AddHttpHeadersListener::class,
                 HtmlExtension::class => HtmlExtension::class,
-            ]
+            ],
         ];
     }
 }

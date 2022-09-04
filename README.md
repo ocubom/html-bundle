@@ -10,9 +10,11 @@ A Symfony bundle to integrate several custom utilities for HTML manipulation
 [![Stargazers][stars-img]][stars-url]
 [![Issues][issues-img]][issues-url]
 [![License][license-img]][license-url]
+
 [![Version][packagist-img]][packagist-url]
 [![CI][workflow-ci-img]][workflow-ci-url]
-[![Coverage][coverage-ci-img]][coverage-ci-url]
+[![Code Quality][quality-img]][quality-url]
+[![Coverage][coverage-img]][coverage-url]
 
 [**Explore the docs »**](https://github.com/ocubom/html-bundle)
 
@@ -184,9 +186,11 @@ See [LICENSE][] for more information.
 [issues-url]:       https://github.com/ocubom/html-bundle/issues
 [license-img]:      https://img.shields.io/github/license/ocubom/html-bundle.svg?style=for-the-badge
 [license-url]:      https://github.com/ocubom/html-bundle/blob/master/LICENSE
-[workflow-ci-img]:  https://img.shields.io/github/workflow/status/ocubom/html-bundle/CI.svg?label=CI&logo=github&style=for-the-badge
+[workflow-ci-img]:  https://img.shields.io/github/workflow/status/ocubom/html-bundle/test.svg?label=CI&logo=github&style=for-the-badge
 [workflow-ci-url]:  https://github.com/ocubom/html-bundle/actions/
-[coverage-ci-img]:  https://img.shields.io/codecov/c/github/ocubom/html-bundle.svg?logo=codecov&logoColor=%23fefefe&style=for-the-badge&token=NQOE5BY6MX
-[coverage-ci-url]:  https://app.codecov.io/gh/ocubom/html-bundle
 [packagist-img]:    https://img.shields.io/packagist/v/ocubom/html-bundle.svg?logo=packagist&logoColor=%23fefefe&style=for-the-badge
 [packagist-url]:    https://packagist.org/packages/ocubom/html-bundle
+[coverage-img]:     https://img.shields.io/scrutinizer/coverage/g/ocubom/html-bundle.svg?logo=scrutinizer&logoColor=fff&style=for-the-badge
+[coverage-url]:     https://scrutinizer-ci.com/g/ocubom/html-bundle/code-structure/main/code-coverage
+[quality-img]:      https://img.shields.io/scrutinizer/quality/g/ocubom/html-bundle.svg?logo=scrutinizer&logoColor=fff&style=for-the-badge
+[quality-url]:      https://scrutinizer-ci.com/g/ocubom/html-bundle/
