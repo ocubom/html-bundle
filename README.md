@@ -186,7 +186,7 @@ See [LICENSE][] for more information.
 [issues-url]:       https://github.com/ocubom/html-bundle/issues
 [license-img]:      https://img.shields.io/github/license/ocubom/html-bundle.svg?style=for-the-badge
 [license-url]:      https://github.com/ocubom/html-bundle/blob/master/LICENSE
-[workflow-ci-img]:  https://img.shields.io/github/workflow/status/ocubom/html-bundle/test.svg?label=CI&logo=github&style=for-the-badge
+[workflow-ci-img]:  https://img.shields.io/github/actions/workflow/status/ocubom/html-bundle/test.yml?branch=main&label=CI&logo=github&style=for-the-badge
 [workflow-ci-url]:  https://github.com/ocubom/html-bundle/actions/
 [packagist-img]:    https://img.shields.io/packagist/v/ocubom/html-bundle.svg?logo=packagist&logoColor=%23fefefe&style=for-the-badge
 [packagist-url]:    https://packagist.org/packages/ocubom/html-bundle
